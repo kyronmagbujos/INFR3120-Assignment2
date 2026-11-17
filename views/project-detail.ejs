@@ -1,7 +1,9 @@
+<!-- Include Layout Header Partial -->
 <%- include('partials/header') %>
 
 <div class="container mt-5">
     <div class="hero-card shadow-lg p-5">
+        <!-- Breadcrumb Navigation for returning to Projects list -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/projects" style="color: var(--gold);">Projects</a></li>
@@ -10,9 +12,11 @@
         </nav>
 
         <div class="row mt-4">
+            <!-- Left Column: Dynamic Project Image -->
             <div class="col-md-6">
                 <img src="<%= project.img %>" class="img-fluid rounded border border-secondary shadow" alt="<%= project.name %>">
             </div>
+            <!-- Right Column: Dynamic Project Name and Detailed Overview -->
             <div class="col-md-6">
                 <h1 style="color: var(--gold);"><%= project.name %></h1>
                 <p class="lead mt-3" style="color: var(--off-white);"><%= project.detail %></p>
@@ -24,4 +28,5 @@
     </div>
 </div>
 
+<!-- Include Layout Footer Partial -->
 <%- include('partials/footer') %>

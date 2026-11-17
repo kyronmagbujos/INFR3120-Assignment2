@@ -1,3 +1,4 @@
+/* Color Palette Variables: "A House of Bees 1" Theme */
 :root {
     --gold: #D6AA58;
     --slate-blue: #477A91;
@@ -5,6 +6,7 @@
     --bg-dark: #121212;
 }
 
+/* Global Page Layout and Typography */
 body { 
     background-color: var(--bg-dark); 
     color: var(--off-white); 
@@ -12,11 +14,13 @@ body {
     margin: 0;
 }
 
+/* Navigation Header Styling */
 .navbar { 
     background-color: #000 !important; 
     border-bottom: 3px solid var(--gold); 
 }
 
+/* Main Container Card Styling */
 .hero-card {
     background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
     border: 1px solid var(--slate-blue);
@@ -25,13 +29,16 @@ body {
     margin-top: 50px;
 }
 
+/* Profile Avatar Circle Image */
 .avatar { 
-    width: 150px; height: 150px; border-radius: 50%; 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
     border: 5px solid var(--gold); 
     transition: 0.5s;
 }
 
-/* Interactive Project Cards */
+/* Interactive Project Card Hover Animations */
 .project-card {
     background-color: #1e1e1e;
     border: 1px solid var(--slate-blue);

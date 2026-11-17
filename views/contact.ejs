@@ -1,20 +1,28 @@
+<!-- Include Layout Header Partial -->
 <%- include('partials/header') %>
-<div class="container hero-card">
-    <h1 style="color: var(--gold);"><%= title %></h1>
+
+<div class="container hero-card mt-5">
+    <!-- Contact Form Interface -->
     <form class="text-start">
+        <!-- User Name Input -->
         <div class="mb-3">
             <label class="form-label">Name</label>
             <input type="text" class="form-control" required>
         </div>
+        <!-- User Email Input -->
         <div class="mb-3">
             <label class="form-label">Email</label>
             <input type="email" class="form-control" required>
         </div>
+        <!-- Message Textarea -->
         <div class="mb-3">
             <label class="form-label">Message</label>
             <textarea class="form-control" rows="3" required></textarea>
         </div>
+        <!-- Form Submit Button -->
         <button type="submit" class="btn btn-outline-warning w-100">Send Message</button>
     </form>
 </div>
+
+<!-- Include Layout Footer Partial -->
 <%- include('partials/footer') %>
