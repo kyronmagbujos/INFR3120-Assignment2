@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+    <div class="hero-card shadow-lg p-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/projects" style="color: var(--gold);">Projects</a></li>
+                <li class="breadcrumb-item active text-white" aria-current="page"><%= project.name %></li>
+            </ol>
+        </nav>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="<%= project.img %>" class="img-fluid rounded border border-secondary shadow" alt="<%= project.name %>">
+            </div>
+            <div class="col-md-6">
+                <h1 style="color: var(--gold);"><%= project.name %></h1>
+                <p class="lead mt-3" style="color: var(--off-white);"><%= project.detail %></p>
+                <div class="mt-5">
+                    <a href="/projects" class="btn btn-outline-warning">Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,49 @@
+:root {
+    --gold: #D6AA58;
+    --slate-blue: #477A91;
+    --off-white: #E1EBF0;
+    --bg-dark: #121212;
+}
+
+body { 
+    background-color: var(--bg-dark); 
+    color: var(--off-white); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.navbar { 
+    background-color: #000 !important; 
+    border-bottom: 3px solid var(--gold); 
+}
+
+.hero-card {
+    background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+    border: 1px solid var(--slate-blue);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.avatar { 
+    width: 150px; height: 150px; border-radius: 50%; 
+    border: 5px solid var(--gold); 
+    transition: 0.5s;
+}
+
+/* Interactive Project Cards */
+.project-card {
+    background-color: #1e1e1e;
+    border: 1px solid var(--slate-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    border-color: var(--gold);
+    box-shadow: 0 15px 30px rgba(214, 170, 88, 0.3);
+}
+
+.project-card:hover .card-title {
+    color: #fff !important;
+}
