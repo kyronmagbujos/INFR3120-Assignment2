@@ -29,7 +29,7 @@ const projects = [
 
 // GET Home Page route: renders index.ejs view template with page data
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Home', message: 'Curious Developer & Computer Architecture Student' });
+  res.render('index', { title: 'Kyron Magbujos', message: 'FBIT Student majoring in Information Technology Security' });
 });
 
 // GET About Page route: renders about.ejs view template
